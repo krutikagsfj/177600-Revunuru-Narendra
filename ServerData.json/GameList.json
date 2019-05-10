@@ -1,0 +1,29 @@
+{
+    "GameList":[
+        {
+            "id":1,
+            "gameName":"Shooting",
+            "gamePrice":105
+        },
+        {
+            "id":2,
+            "gameName":"AngryBirds",
+            "gamePrice":95
+        },
+        {
+            "id":3,
+            "gameName":"Temple Run",
+            "gamePrice":200
+        },
+        {
+            "id":4,
+            "gameName":"Bike Race",
+            "gamePrice":90
+        },
+        {
+            "id":5,
+            "gameName":"Air Control",
+            "gamePrice":800
+        }
+    ]
+}

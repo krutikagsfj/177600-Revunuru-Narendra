@@ -1,0 +1,21 @@
+<div class="jumbotron" style="background-color: yellow">
+<div class="container">
+<div class="col-md-12">
+  <p style="color: blue">Welcome to GameCity!Your Card Balance Amount is Rs 600</p>
+<table class="table table-striped table-responsive-md btn-table">
+  <!-- table for displaying details of gamess -->
+  <tr><th>Id</th>
+      <th>Game Name</th>
+      <th>Game Price</th>
+      <th>Game Link</th>
+  </tr>
+  <tr *ngFor='let game of gameslist'>
+    <td>{{game.id}}</td>
+    <td>{{game.gameName}}</td>
+    <td>Rs {{game.gamePrice}}</td>
+    <td><a [routerLink]="['/success']">playnow</a></td>
+  </tr>
+</table>
+</div>
+</div>
+</div>

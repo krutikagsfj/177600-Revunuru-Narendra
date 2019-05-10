@@ -1,0 +1,26 @@
+
+<!-- jumbotron comes under bootstrap for styling  -->
+<div class="jumbotron">
+
+  <h1>Thanks for Playing Online Games
+  </h1>
+  <form [formGroup]="linkForm" novalidate>
+
+    <div class="form-group" (ngSubmit)="onSubmit()">
+      <P>Enter the Amount to Play</P>
+      <p>Shooting --Rs 105</p>
+      <p>AngryBird--95</p>
+      <p>TempleRun--200</p>
+      <p>Bike Race--90</p>
+      <p>Air Control--800</p>
+      <!-- Reactiveform for input -->
+      <input type="number" class="form-control" formControlName="gameprice" placeholder="Enter Amount" id="gameprice"/>
+      <div *ngIf="submitted && linkForm.controls.gameprice.errors" class="error"></div>
+        <div *ngIf="linkForm.controls.gameprice.errors.required.touched"> Amount is required</div>
+      <br>
+      <br>
+      <button class="btn btn-info"  >playnow:</button>
+      <div *ngIf="Invalidlink" class="error">
+          <div> InSufficient Fund</div>
+        </div>
+   
